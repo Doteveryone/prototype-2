@@ -175,8 +175,7 @@ h2 {
 }
 
 #contacts li {
-  padding:1em;
-  height:4em;
+  padding: 0 1em 1em 1em;
   border-bottom:#000 1px solid;
 }
 
@@ -325,4 +324,8 @@ h2 {
 
 .cf:after {
     clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
