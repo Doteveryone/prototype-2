@@ -6,12 +6,24 @@ var App = Backbone.Model.extend({
     this.showHomeScreen();
   },
 
-  show: function(screenName) {
+  open: function(screenName) {
     var screen = this.findScreen(screenName);
+    if (screen) {
+      _.map(this.screens, function(screenToHide) {
+        screenToHide.hide();
+      });
+
+      screen.show();
+    } else {
+      console.warn('No screen ' + screenName + ' found.')
+    }
+  },
+
+  close: function() {
     _.map(this.screens, function(screenToHide) {
       screenToHide.hide();
     });
-    screen.show();
+    this.showHomeScreen();
   },
 
   setUpNavigation: function() {
@@ -22,7 +34,7 @@ var App = Backbone.Model.extend({
   setUpScreens: function() {
     var screenEls = $('[data-screen]');
     _.each(screenEls, _.bind(function(screenEl) {
-      var screen = new Screen(screenEl);
+      var screen = new Screen(screenEl, this);
       var screenView = new ScreenView({ el: screenEl, model: screen });
 
       this.screens.push(screen);

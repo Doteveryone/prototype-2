@@ -8,9 +8,9 @@ var NavigationView = Backbone.View.extend({
   },
 
   handleClick: function(event) {
-    event.preventDefault;
+    event.preventDefault();
     var screen = $(event.target).attr('data-nav-screen');
-    this.model.show(screen);
+    this.model.open(screen);
   },
 
   render: function() {
