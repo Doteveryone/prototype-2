@@ -136,3 +136,9 @@ $(function() {
   }
 });
 
+var screenEls = $('[data-screen]');
+_.each(screenEls, function(screenEl) {
+  var screen = new Screen();
+  var screenView = new ScreenView({ el: screenEl, model: screen })
+});
+
