@@ -215,8 +215,9 @@
     <a href="#" data-open-screen="medication">Back</a>
   </div>
 
-  <div data-screen="conversation" class="padded">
-    <h2>Conversation about Ibuprofen tablets</h2>
+  <div data-screen="conversation" class="padded cf">
+    <h2 class="cf">Conversation about Ibuprofen tablets<a href="#" data-open-screen="medication" class="back">Back</a></h2>
+
     <ul class="conversation">
       <li class="yours">
         <img src="assets/img/avatar.svg">
@@ -236,7 +237,11 @@
 
     </ul>
 
-    <a href="#" data-open-screen="medication">Back</a>
+    <div class="button-bar cf">
+      <a href="#" class="button" data-open-screen="free-text">Type reply</a>
+      <a href="#" class="button" data-open-screen="audio">Dictate reply</a>
+    </div>
+
   </div>
 
   <div data-screen="record" class="padded">

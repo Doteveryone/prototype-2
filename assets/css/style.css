@@ -93,8 +93,6 @@ h2 {
   background:#FFF;
   padding:1em;
   overflow:auto;
-  margin-top:0.5em;
-  margin-bottom:1em;
 }
 
 #nav a {
@@ -235,18 +233,19 @@ h2 {
 
 #something-wrong-button {
   width:100vw;
-  padding:1em;
+  padding: 15px 20px;
   bottom:0;
   left:0;
   position:absolute;
-  border-top:#EEE 1px solid;
+  border-top: black 1px solid;
+  background: white;
 }
 
 [data-screen] {
   width:100vw;
-  height:80vh;
+  height:85vh;
   position:absolute;
-  top:20%;
+  top:15%;
   left:0;
   background:#FFF;
   display: none;
@@ -255,8 +254,8 @@ h2 {
 [data-screen] li {
   display: block;
   border-bottom:#000 1px solid;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 [data-screen] h2 {
@@ -267,6 +266,13 @@ h2 {
 [data-screen] h3 {
   font-size: 120%;
   font-weight: bold;
+}
+
+.back {
+  float: right;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 8px;
 }
 
 .button-bar {
@@ -288,7 +294,7 @@ h2 {
 }
 
 .padded {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .info p {
