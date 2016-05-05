@@ -6,6 +6,14 @@ var App = Backbone.Model.extend({
     this.showHomeScreen();
   },
 
+  show: function(screenName) {
+    var screen = this.findScreen(screenName);
+    _.map(this.screens, function(screenToHide) {
+      screenToHide.hide();
+    });
+    screen.show();
+  },
+
   setUpNavigation: function() {
     var navEl = $('[data-nav]');
     var navView = new NavigationView({ el: navEl, model: this });
@@ -22,10 +30,14 @@ var App = Backbone.Model.extend({
   },
 
   showHomeScreen: function() {
-    var homeScreen = _.find(this.screens, function(screen) {
-      return screen.name === 'home';
-    })
+    var homeScreen = this.findScreen('home');
     homeScreen.show();
+  },
+
+  findScreen: function(name) {
+    return _.find(this.screens, function(screen) {
+      return screen.name === name;
+    });
   }
 });
 
