@@ -1,8 +1,14 @@
 var App = Backbone.Model.extend({
   initialize: function() {
     this.screens = [];
+    this.setUpNavigation();
     this.setUpScreens();
     this.showHomeScreen();
+  },
+
+  setUpNavigation: function() {
+    var navEl = $('[data-nav]');
+    var navView = new NavigationView({ el: navEl, model: this });
   },
 
   setUpScreens: function() {

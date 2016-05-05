@@ -9,10 +9,10 @@
 
 <div id="container">
   <!-- Navigation -->
-  <div id="nav">
-    <a href="#" id="contact-button">Left</a>
-    <a href="#" id="home-button">Centre</a>
-    <a href="#" id="note-button">Right</a>
+  <div id="nav" data-nav>
+    <a href="#" id="contact-button" data-nav-screen="notes">Left</a>
+    <a href="#" id="home-button" data-nav-screen="home">Centre</a>
+    <a href="#" id="note-button" data-nav-screen="other">Right</a>
   </div>
 
   <!-- Home screen and menu -->
@@ -208,6 +208,7 @@
 <script src="assets/js/backbone.js"></script>
 
 <script src="assets/js/screen.js"></script>
+<script src="assets/js/navigation.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>
