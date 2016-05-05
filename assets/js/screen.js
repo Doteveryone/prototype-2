@@ -1,5 +1,6 @@
 var Screen = Backbone.Model.extend({
-  initialize: function() {
+  initialize: function(el) {
+    this.name = $(el).attr('data-screen');
     this.hide();
   },
 
@@ -19,7 +20,7 @@ var ScreenView = Backbone.View.extend({
   },
 
   render: function() {
-    if (this.model.shown) {
+    if (this.model.get('shown') {
       this.$el.show();
     } else {
       this.$el.hide();
