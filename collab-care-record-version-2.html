@@ -16,13 +16,13 @@
   </div>
 
   <!-- Home screen and menu -->
-  <div id="home-screen" class="view" data-screen="home">
+  <div id="home-screen" class="view info" data-screen="home">
     <div style="padding-left:1em; padding-right:1em;">
       <h1>Hello Natasha</h1>
-      <h2>Today is Friday 29th April</h2>
-      <h2>Your next appointment is <u>today at 12:30</u> with your physiotherapist Mark</h2>
-      <h2>You can access your <u>latest blood test results</u> here in 2 days</h2>
-      <h2>You have <u>1 new message</ul> to read from Dr Robinson</h2>
+      <p>Today is Friday 29th April</p>
+      <p>Your next appointment is <u>today at 12:30</u> with your physiotherapist Mark</p>
+      <p>You can access your <u>latest blood test results</u> here in 2 days</p>
+      <p>You have <u>1 new message</u> to read from Dr Robinson</p>
     </div>
     <a id="menu-button" href="#" data-open-screen="menu">&#9650;</a>
   </div>
@@ -208,27 +208,57 @@
         <h3>Ibuprofen tablets</h3>
         <p class="date">29 April 2016 08:31</p>
         <div class="button-bar cf">
-          <a href="#" class="button" data-screen-open="how-to-take-it">How to take it</a>
-          <a href="#" class="button" data-screen-open="conversation">Conversation</a>
+          <a href="#" class="button" data-open-screen="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-open-screen="conversation">Conversation</a>
         </div>
       </li>
       <li>
         <h3>Paracetamol tablets</h3>
         <p class="date">19 April 2016 13:21</p>
         <div class="button-bar cf">
-          <a href="#" class="button" data-screen-open="how-to-take-it">How to take it</a>
-          <a href="#" class="button" data-screen-open="conversation">Conversation</a>
+          <a href="#" class="button" data-open-screen="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-open-screen="conversation">Conversation</a>
         </div>
       </li>
       <li>
         <h3>Co-codamol tablets</h3>
         <p class="date">17 April 2016 08:28</p>
         <div class="button-bar cf">
-          <a href="#" class="button" data-screen-open="how-to-take-it">How to take it</a>
-          <a href="#" class="button" data-screen-open="conversation">Conversation</a>
+          <a href="#" class="button" data-open-screen="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-open-screen="conversation">Conversation</a>
         </div>
       </li>
     </ul>
+  </div>
+
+  <div data-screen="how-to-take-it" class="padded info">
+    <h2>How to take Ibuprofen tablets</h2>
+    <p>You’re taking two tablets three times a day after a meal.</p>
+    <a href="#" data-open-screen="medication">Back</a>
+  </div>
+
+  <div data-screen="conversation" class="padded">
+    <h2>Conversation about Ibuprofen tablets</h2>
+    <ul class="conversation">
+      <li class="yours">
+        <img src="assets/img/avatar.svg">
+        <h4>You said on 1st May at 8:33am:</h4>
+        <p>My stomach is often upset when I take these.</p>
+      </li>
+      <li>
+        <img src="assets/img/avatar.svg">
+        <h4>Dr. Tim Nicholls said on 2nd May at 10:54am:</h4>
+        <p>Please make sure to take the tablets after a meal.</p>
+      </li>
+      <li class="yours">
+        <img src="assets/img/avatar.svg">
+        <h4>You said on 2nd May at 11:22am:</h4>
+        <p>Thank you, I will try that.</p>
+      </li>
+
+    </ul>
+
+    <a href="#" data-open-screen="medication">Back</a>
   </div>
 </div>
 
