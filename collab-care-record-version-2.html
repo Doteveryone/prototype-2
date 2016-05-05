@@ -27,11 +27,11 @@
     <a id="menu-button" href="#" data-open-screen="menu">&#9650;</a>
   </div>
 
-  <div id="menu" data-screen="menu">
+  <div id="menu" data-screen="menu" class="padded">
     <ul>
       <li><a href="#" data-open-screen="notes">Appointments<span></span></a></li>
       <li><a href="#" data-open-screen="notes">Prescriptions<span></span></a></li>
-      <li><a href="#" data-open-screen="notes-screen">Medication<span></span></a></li>
+      <li><a href="#" data-open-screen="medication">Medication<span></span></a></li>
       <li><a href="#" data-open-screen="notes">Test results<span>1</span></a></li>
       <li><a href="#" data-open-screen="notes">Physiotherapy<span></span></a></li>
       <li><a href="#" data-open-screen="notes">Hospice schedule<span></span></a></li>
@@ -197,6 +197,36 @@
       </li>
       <li>
         <a id="close-sidebar" href="#" data-close-screen>Close</a>
+      </li>
+    </ul>
+  </div>
+
+  <div data-screen="medication" class="padded">
+    <h2>Medication</h2>
+    <ul>
+      <li>
+        <h3>Ibuprofen tablets</h3>
+        <p class="date">29 April 2016 08:31</p>
+        <div class="button-bar cf">
+          <a href="#" class="button" data-screen-open="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-screen-open="conversation">Conversation</a>
+        </div>
+      </li>
+      <li>
+        <h3>Paracetamol tablets</h3>
+        <p class="date">19 April 2016 13:21</p>
+        <div class="button-bar cf">
+          <a href="#" class="button" data-screen-open="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-screen-open="conversation">Conversation</a>
+        </div>
+      </li>
+      <li>
+        <h3>Co-codamol tablets</h3>
+        <p class="date">17 April 2016 08:28</p>
+        <div class="button-bar cf">
+          <a href="#" class="button" data-screen-open="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-screen-open="conversation">Conversation</a>
+        </div>
       </li>
     </ul>
   </div>
