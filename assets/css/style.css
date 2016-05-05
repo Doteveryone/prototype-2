@@ -131,10 +131,6 @@ h2 {
   background:#FFF;
 }
 
-#menu ul {
-
-}
-
 #menu ul li {
   border-bottom:#000 1px solid;
   clear:both;
@@ -191,19 +187,6 @@ h2 {
   background-size:cover;
 }
 
-#sidebar {
-  width:100vw;
-  height:100vh;
-  position:absolute;
-  top:0;
-  right:-100vw;
-  background:#222;
-}
-
-#sidebar a {
-  color:#FFF;
-}
-
 #sidebar ul {
   margin:1em;
 }
@@ -231,16 +214,6 @@ h2 {
   margin:1em;
 }
 
-#activity-history {
-  width:100vw;
-  height:100vh;
-  position:absolute;
-  top:0;
-  left:0;
-  background:#FFF;
-  display:none;
-}
-
 #activity-history ul {
   margin:1em;
 }
@@ -264,5 +237,15 @@ h2 {
   left:0;
   position:absolute;
   border-top:#EEE 1px solid;
+}
+
+[data-screen] {
+  width:100vw;
+  height:80vh;
+  position:absolute;
+  top:20%;
+  left:0;
+  background:#FFF;
+  display: none;
 }
 
