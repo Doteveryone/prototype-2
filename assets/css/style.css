@@ -123,12 +123,8 @@ h2 {
   text-decoration:none;
   color:#000;
   border-bottom:#666 5px solid;
-}
-
-#menu {
-  position:absolute;
-  top:calc(100vh - 5px - 2.2em);
-  background:#FFF;
+  position: fixed;
+  bottom: 0px;
 }
 
 #menu ul li {

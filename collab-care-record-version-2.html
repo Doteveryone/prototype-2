@@ -24,17 +24,17 @@
       <h2>You can access your <u>latest blood test results</u> here in 2 days</h2>
       <h2>You have <u>1 new message</ul> to read from Dr Robinson</h2>
     </div>
+    <a id="menu-button" href="#" data-open-screen="menu">&#9650;</a>
   </div>
 
-  <div id="menu">
-    <a id="menu-button" href="#">&#9650;</a>
+  <div id="menu" data-screen="menu">
     <ul>
-      <li><a href="#">Appointments<span></span></a></li>
-      <li><a href="#">Prescriptions<span></span></a></li>
-      <li><a href="#">Medication<span></span></a></li>
-      <li><a href="#">Test results<span>1</span></a></li>
-      <li><a href="#">Physiotherapy<span></span></a></li>
-      <li><a href="#">Hospice schedule<span></span></a></li>
+      <li><a href="#" data-open-screen="notes">Appointments<span></span></a></li>
+      <li><a href="#" data-open-screen="notes">Prescriptions<span></span></a></li>
+      <li><a href="#" data-open-screen="notes-screen">Medication<span></span></a></li>
+      <li><a href="#" data-open-screen="notes">Test results<span>1</span></a></li>
+      <li><a href="#" data-open-screen="notes">Physiotherapy<span></span></a></li>
+      <li><a href="#" data-open-screen="notes">Hospice schedule<span></span></a></li>
     </ul>
   </div>
 
@@ -46,7 +46,7 @@
         <p>I'm worried my blood... - NT</p>
         <p>That's normal with... - RP</p>
       </div>
-      <a class="free-text-button" href="#"></a>
+      <a class="free-text-button" href="#" data-open-screen="free-text"></a>
     </div>
     <div style="padding:1em; border-bottom:#000 1px solid; overflow:auto;">
       <div style="float:left;">
@@ -54,7 +54,7 @@
         <p>I'd like to bring... - AB</p>
         <p>That's fine, see... - NT</p>
       </div>
-      <a class="free-text-button" href="#"></a>
+      <a class="free-text-button" href="#" data-open-screen="free-text"></a>
     </div>
     <div style="padding:1em; border-bottom:#000 1px solid; overflow:auto;">
       <div style="float:left;">
@@ -62,7 +62,7 @@
         <p>Here are your... - AB</p>
         <p>Consultation notes... - NT</p>
       </div>
-      <a class="free-text-button" href="#"></a>
+      <a class="free-text-button" href="#" data-open-screen="free-text"></a>
     </div>
     <div style="padding:1em; border-bottom:#000 1px solid; overflow:auto;">
       <div style="float:left;">
@@ -70,7 +70,7 @@
         <p>I'd like to bring... - AB</p>
         <p>That's fine, see... - NT</p>
       </div>
-      <a class="free-text-button" href="#"></a>
+      <a class="free-text-button" href="#" data-open-screen="free-text"></a>
     </div>
   </div>
 
