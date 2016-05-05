@@ -98,26 +98,29 @@ h2 {
 }
 
 #nav a {
-  width:1.5em;
-  height:1.5em;
+  width: 60px;
   border-radius:1.5em;
-  background:blue;
-  display:block;
+  display:inline-block;
   text-indent:-9999px;
+}
+
+#nav img {
+  display: block;
+  max-height: 70px;
 }
 
 #nav #contact-button {
   float:left;
 }
 
-#nav #home-button {
+#home {
   float:left;
   position:absolute;
   left:50%;
-  margin-left:-0.75em;
+  margin-left:-30px;
 }
 
-#nav #note-button {
+#me {
   float:right;
 }
 

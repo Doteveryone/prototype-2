@@ -10,9 +10,9 @@
 <div id="container">
   <!-- Navigation -->
   <div id="nav" data-nav>
-    <a href="#" id="contact-button" data-nav-screen="record">Left</a>
-    <a href="#" id="home-button" data-nav-screen="home">Centre</a>
-    <a href="#" id="note-button" data-nav-screen="other">Right</a>
+    <a href="#" id="record" data-nav-screen="record"><img src="assets/img/folders.svg"></a>
+    <a href="#" id="home" data-nav-screen="home"><img src="assets/img/home.svg"></a>
+    <a href="#" id="me" data-nav-screen="me"><img src="assets/img/me.svg"></a>
   </div>
 
   <!-- Home screen and menu -->
@@ -24,7 +24,6 @@
       <p>You can access your <u>latest blood test results</u> here in 2 days</p>
       <p>You have <u>1 new message</u> to read from Dr Robinson</p>
     </div>
-    <a id="menu-button" href="#" data-open-screen="menu">&#9650;</a>
   </div>
 
   <div id="menu" data-screen="menu" class="padded">
@@ -180,27 +179,6 @@
     <a id="something-wrong-button" href="#">I don't recognise this</a>
   </div>
 
-  <!-- Sidebar -->
-  <div id="sidebar" data-screen="other">
-    <ul>
-      <li>
-        <a href="#" data-open-screen="activity-history">Activity history</a>
-      </li>
-      <li>
-        <a href="#" data-open-screen="activity-history">My details</a>
-      </li>
-      <li>
-        <a href="#">DNR</a>
-      </li>
-      <li>
-        <a href="#" data-open-screen="activity-history">Legal information</a>
-      </li>
-      <li>
-        <a id="close-sidebar" href="#" data-close-screen>Close</a>
-      </li>
-    </ul>
-  </div>
-
   <div data-screen="medication" class="padded">
     <h2>Medication</h2>
     <ul>
@@ -208,7 +186,7 @@
         <h3>Ibuprofen tablets</h3>
         <p class="date">29 April 2016 08:31</p>
         <div class="button-bar cf">
-          <a href="#" class="button" data-open-screen="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-open-screen="how-to-take-it">Details</a>
           <a href="#" class="button" data-open-screen="conversation">Conversation</a>
         </div>
       </li>
@@ -216,7 +194,7 @@
         <h3>Paracetamol tablets</h3>
         <p class="date">19 April 2016 13:21</p>
         <div class="button-bar cf">
-          <a href="#" class="button" data-open-screen="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-open-screen="how-to-take-it">Details</a>
           <a href="#" class="button" data-open-screen="conversation">Conversation</a>
         </div>
       </li>
@@ -224,7 +202,7 @@
         <h3>Co-codamol tablets</h3>
         <p class="date">17 April 2016 08:28</p>
         <div class="button-bar cf">
-          <a href="#" class="button" data-open-screen="how-to-take-it">How to take it</a>
+          <a href="#" class="button" data-open-screen="how-to-take-it">Details</a>
           <a href="#" class="button" data-open-screen="conversation">Conversation</a>
         </div>
       </li>
@@ -298,6 +276,44 @@
   </div>
 
   <div data-screen="me" class="padded">
+    <ul class="grid">
+      <li>
+        <a href="#" data-open-screen="activity-history">
+          <img src="assets/img/activity_history.svg">
+          Activity history
+        </a>
+      </li>
+      <li>
+        <a href="#" data-open-screen="my-details">
+          <img src="assets/img/my_profile.svg">
+          My details
+        </a>
+      </li>
+      <li>
+        <a href="#" data-open-screen="dnr">
+          <img src="assets/img/DNR.png">
+          DNR
+        </a>
+      </li>
+      <li>
+        <a href="#" data-open-screen="lpa">
+          <img src="assets/img/LPA.png">
+          Power of Attorney
+        </a>
+      </li>
+      <li>
+        <a href="#" data-open-screen="organ-donation">
+          <img src="assets/img/organ_donation.svg">
+          Organ donation
+        </a>
+      </li>
+      <li>
+        <a href="#" data-open-screen="blank">
+          <img src="assets/img/plus.svg">
+          Add
+        </a>
+      </li>
+    </ul>
   </div>
 
 </div>
