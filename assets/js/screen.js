@@ -1,5 +1,15 @@
 var Screen = Backbone.Model.extend({
+  initialize: function() {
+    this.hide();
+  },
 
+  show: function() {
+    this.set({ shown: true });
+  },
+
+  hide: function() {
+    this.set({ shown: false });
+  }
 });
 
 var ScreenView = Backbone.View.extend({
@@ -8,9 +18,11 @@ var ScreenView = Backbone.View.extend({
     this.render();
   },
 
-  events: {
-  },
-
   render: function() {
+    if (this.model.shown) {
+      this.$el.show();
+    } else {
+      this.$el.hide();
+    }
   }
 });
