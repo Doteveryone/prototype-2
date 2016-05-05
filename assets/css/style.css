@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -116,7 +123,7 @@ h2 {
 
 #menu-button {
   background:#EEE;
-  width:calc(100vw - 1em);
+  width:100vw;
   text-align:center;
   padding:0.5em;
   display:block;
@@ -134,10 +141,8 @@ h2 {
 }
 
 #menu ul li a {
-  padding:1em;
   display:block;
-  width:calc(100% - 2em);
-  float:left;
+  width:100%;
 }
 
 #menu ul li span {
@@ -245,3 +250,45 @@ h2 {
   display: none;
 }
 
+[data-screen] ul li {
+  display: block;
+  border-bottom:#000 1px solid;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+[data-screen] h3 {
+  font-weight: bold;
+}
+
+.button-bar {
+  width: 100%;
+  margin: 0.5em 0;
+  background: silver;
+}
+
+.button {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.button:first-child {
+  border-right: 1px solid black;
+}
+
+.padded {
+  padding: 20px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
