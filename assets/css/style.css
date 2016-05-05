@@ -316,6 +316,20 @@ h2 {
   margin-right: 10px;
 }
 
+.grid li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  border-bottom: none;
+}
+
+.grid img {
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -10px;
+}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
