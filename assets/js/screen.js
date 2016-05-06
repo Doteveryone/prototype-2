@@ -26,7 +26,9 @@ var ScreenView = Backbone.View.extend({
 
   events: {
     'click [data-open-screen]': 'openScreen',
-    'click [data-close-screen]': 'closeScreen'
+    'click [data-close-screen]': 'closeScreen',
+    'click [data-close-popup]': 'closePopup',
+    'click [data-open-popup]': 'openPopup'
   },
 
   openScreen: function(event) {
@@ -38,6 +40,17 @@ var ScreenView = Backbone.View.extend({
   closeScreen: function(event) {
     event.preventDefault();
     this.model.app.close();
+  },
+
+  openPopup: function(event) {
+    event.preventDefault();
+    var popupName = event.currentTarget.dataset.openPopup;
+    this.model.app.openPopup(popupName)
+  },
+
+  closePopup: function(event) {
+    event.preventDefault();
+    this.model.app.closePopup();
   },
 
   render: function() {
