@@ -10,7 +10,6 @@ var NavigationView = Backbone.View.extend({
   handleClick: function(event) {
     event.preventDefault();
     var screen = event.currentTarget.dataset.navScreen;
-    console.log(screen)
     this.model.open(screen);
   },
 
