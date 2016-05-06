@@ -4,9 +4,14 @@ var Router = Backbone.Router.extend({
   },
 
   routes: {
+    'bar/:bar': 'bar',
     'popup/:popup': 'popup',
     'screen/:screen': 'screen',
     '*default': 'defaultRoute'
+  },
+
+  bar: function(bar) {
+    this.app.openBar(bar);
   },
 
   popup: function(popup) {
@@ -19,6 +24,7 @@ var Router = Backbone.Router.extend({
 
   defaultRoute: function() {
     this.app.closePopup();
+    this.app.closeBar();
   }
 
 });
