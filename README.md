@@ -70,6 +70,16 @@ The attribute doesn’t need a name, it will close all popups.
 
 Bars sit at the top of the screen and are meant to provide some information.
 
+### Making bars
+
+Any container will work as a bar, as long as it has the `data-bar` attribute:
+
+```
+<div data-bar="notice">
+  ...
+</div>
+```
+
 ### Opening bars
 
 Using the URL: append `#bar/notice` to the filename in the browser’s URL bar.
