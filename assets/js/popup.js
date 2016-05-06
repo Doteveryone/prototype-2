@@ -11,11 +11,13 @@ var PopupView = Backbone.View.extend({
   },
 
   open: function(event) {
+    event.preventDefault();
     var popupName = event.currentTarget.dataset.openPopup;
     this.model.openPopup(popupName)
   },
 
-  close: function() {
+  close: function(event) {
+    event.preventDefault();
     this.model.closePopup();
   },
 
