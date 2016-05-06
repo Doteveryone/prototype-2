@@ -5,12 +5,16 @@ var Router = Backbone.Router.extend({
 
   routes: {
     'popup/:popup': 'popup',
+    'screen/:screen': 'screen',
     '*default': 'defaultRoute'
   },
 
   popup: function(popup) {
-    console.log(popup)
     this.app.openPopup(popup);
+  },
+
+  screen: function(screen) {
+    this.app.open(screen);
   },
 
   defaultRoute: function() {
