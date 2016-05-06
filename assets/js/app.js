@@ -3,6 +3,7 @@ var App = Backbone.Model.extend({
     this.screens = [];
     this.setUpNavigation();
     this.setUpScreens();
+    this.setUpPopups();
     this.showHomeScreen();
   },
 
@@ -41,6 +42,13 @@ var App = Backbone.Model.extend({
     }, this));
   },
 
+  setUpPopups: function() {
+    var popupEls = $('[data-popup]');
+    _.each(popupEls, function(popupEl) {
+      var popupView = new PopupView({ el: popupEl, model: this });
+    }, this);
+  },
+
   showHomeScreen: function() {
     var homeScreen = this.findScreen('home');
     homeScreen.show();
@@ -50,6 +58,14 @@ var App = Backbone.Model.extend({
     return _.find(this.screens, function(screen) {
       return screen.name === name;
     });
+  },
+
+  openPopup: function(popup) {
+    this.set({ popup: popup });
+  },
+
+  closePopup: function() {
+    this.unset('popup');
   }
 });
 
