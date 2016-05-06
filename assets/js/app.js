@@ -70,4 +70,6 @@ var App = Backbone.Model.extend({
 });
 
 var app = new App();
+var router = new Router(app);
+Backbone.history.start();
 
